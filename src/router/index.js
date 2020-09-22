@@ -5,16 +5,12 @@ import home from '../components/home'
 
 Vue.use(VueRouter)
 
-const routes = new VueRouter({
+const router = new VueRouter({
   routes: [
     { path: '/', redirect: '/login' },
     { path: '/Login', component: Login },
     { path: '/home', component: home }
   ]
-})
-
-const router = new VueRouter({
-  routes
 })
 
 // 挂在路由导航守卫
